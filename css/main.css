@@ -22,35 +22,23 @@ main.wrapper {
   background-color: #eee8d5;
 }
 
-h2#contents {
+h2#contents, #favs, #facts, #types {
   color: #93a1a1;
 }
 
-h2#favs {
-  color: #93a1a1;
-}
-
-h2#facts {
-  color: #93a1a1;
-}
-
-h2#types {
-  color: #93a1a1;
-}
-
-div > .dfn {
+.wrapper div.dfn {
   background-color: #b58900;
 }
 
-main > .dfn strong {
-  color: #fff;
-}
-
-html > header.logo mark {
+html body header:nth-child(1) ul li mark {
   background-color: #719e07;
 }
 
-.contents [href^="http://en.wikipedia.org/wiki/Fruit"] {
+.dfn p + strong {
+  color: #fff;
+}
+
+.contents ul li:last-child {
   background-color: #2694d8;
 }
 
@@ -72,4 +60,8 @@ ol li:last-child {
 
 .types li:nth-child(3n) {
   background-color: #d04b16;
+}
+
+a[rel="external"] {
+  background-color: #2694d8;
 }
